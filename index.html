@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <title>Calculator</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="display-out">
+        <div class="display">
+          <form name="form">
+            <input id="textview" class="textview" name="textview" type="text" placeholder="." readonly>
+          </form>
+        </div>
+      </div>
+      <div class="logo-container">
+        <div class="logo">🚀</div>
+      </div>
+    </div>
+
+
+    <div class="keyboard-out">
+      <div class="keyboard">
+
+        <section class="left">
+          <div class="tv">
+            <div class="screen-tv">
+              <!-- <iframe width="450" height="270" src="https://www.youtube.com/embed/nYLd-i4KA1o?autoplay=1;mute=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            </div>
+
+          </div>
+        </section>
+
+        <section class="right">
+          <div class="group-sup">
+            <button class="functions" onclick="cl()">CLEAR</button>
+            <button class="functions" onclick="back()">⇤</button>
+            <button class="functions" onclick="squareRoot()">√</button>
+          </div>
+
+          <div class="group">
+
+            <button class="button" onclick="insert(7)">7</button>
+            <button class="button" onclick="insert(8)">8</button>
+            <button class="button" onclick="insert(9)">9</button>
+            <button class="button" onclick="insert('/')">/</button>
+          </div>
+
+          <div class="group">
+            <button class="button" onclick="insert(4)">4</button>
+            <button class="button" onclick="insert(5)">5</button>
+            <button class="button" onclick="insert(6)">6</button>
+            <button class="button" onclick="insert('*')">x</button>
+          </div>
+
+          <div class="group">
+            <button class="button" onclick="insert(1)">1</button>
+            <button class="button" onclick="insert(2)">2</button>
+            <button class="button" onclick="insert(3)">3</button>
+            <button class="button" onclick="insert('-')">-</button>
+          </div>
+
+          <div class="group">
+            <button class="button" onclick="insert(0)">0</button>
+            <button class="button" onclick="insert('.')">.</button>
+            <button class="button" onclick="equal(0)">=</button>
+            <button class="button" onclick="insert('+')">+</button>
+          </div>
+        </section>
+      </div>
+      <!--keyboard-->
+    </div>
+    <!--keyboard-out-->
+
+  </div>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
