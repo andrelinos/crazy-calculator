@@ -22,6 +22,11 @@ function cl() {
 
 function squareRoot() {
     var exp = document.form.textview.value;
+    if (!exp) {
+        alert('Digite um valor para descobrir a raiz quadrada!');
+        return;
+    }
+
     var a = 1,
         b = 0;
     for (var i = 0; i < exp; i++) {
