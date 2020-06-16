@@ -9,6 +9,13 @@ function equal() {
     }
 }
 
+function percent() {
+    var exp = document.form.textview.value;
+    if (exp) {
+        document.form.textview.value = eval(exp) / 100;
+    }
+}
+
 function back() {
     var exp = document.form.textview.value;
     if (exp) {
